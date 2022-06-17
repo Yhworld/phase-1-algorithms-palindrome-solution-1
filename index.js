@@ -1,7 +1,16 @@
 function isPalindrome(word) {
   // Write your algorithm here
-}
+  const wordSplit = word.split('');
+  const wordReverse = wordSplit.reverse();
+  const wordJoin = wordReverse.join('');
 
+  if (word == wordJoin) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(isPalindrome('racecar'))
 /* 
   Add your pseudocode here
 */
